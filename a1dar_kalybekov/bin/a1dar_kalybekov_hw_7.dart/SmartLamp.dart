@@ -1,4 +1,4 @@
-import 'Device.dart';
+import 'Device.dart'
 import 'Adjustable.dart';
 import 'BatteryPowered.dart';
 

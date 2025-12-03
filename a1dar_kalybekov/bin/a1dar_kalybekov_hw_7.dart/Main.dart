@@ -12,14 +12,15 @@ void main(){
     SmartThermostat('Thermostat', 14)
   ];
 
-  for (var device in device){
+  for (var device in device){   
     device.showInfo();
     device.turnOn();
-    if(device is Adjustable){
-      (device as Adjustable).increase;
+
+    if(device case Adjustable adjustable){
+      adjustable.increase();
     }
-    if(device is BatteryPowered){
-      (device as BatteryPowered).showBattery();
+    if(device case BatteryPowered batteryPowered){
+      batteryPowered.showBattery();
     }
   }
 
